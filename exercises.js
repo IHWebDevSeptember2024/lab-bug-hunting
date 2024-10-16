@@ -19,16 +19,21 @@ function greet(name) {
 }
 // The greeting should be displayed on console
 greet('Èric');
+
 // The function returns the result of the expression but it won't print it anywhere (it can be stored in a variable or used in another expression).
 // To print it, the console.log() must be implemented.
 // I passed a string to the greet function as well because if no argument is passed in the function invocation, the value of 'name' is undefined.
 
 // Exercise 4: Arrow Functions
-const multiply = (a, b) => {
+/* const multiply = (a, b) => {
     a * b;
-};
+}; */
+const multiply = (a, b) => a * b;
 const result = multiply(2, 3);
 console.log('The result is:', result);
+
+// The arrow function needed a 'return'
+// If the expression is written in one line without curly brackets, the return keyword is not needed (it's implicit)
 
 // Exercise 5: Callbacks
 function processInput(user, callback) {
