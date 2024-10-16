@@ -1,7 +1,7 @@
 // Exercise 1: Arrays
 const numbers = [1, 2, 3, 4, 5];
 const sum = numbers.reduce((acc, num) => {
-    return acc + number;
+    return acc + /*number*/ num;  // 'number' had to be 'num', as in the second argument of the callback function
 }, 0);
 console.log('The sum is:', sum);
 
