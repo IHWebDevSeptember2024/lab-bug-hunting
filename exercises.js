@@ -44,14 +44,32 @@ processInput('Mary', function(name) {
 });
 // The welcome should be displayed in the console
 
+//This code is ok, it works as expected.
+
+
 // Exercise 6: Variable Scope
 function counter() {
+    /*     
     for (var i = 0; i < 5; i++) {
         // some code
     }
     console.log(i); // Should print 5
+    */
+   
+    let count = 0;
+    for (let i = 0; i < 5; i++) {
+        count++;
+    }
+    console.log(count)
 }
 counter();
+
+// The code works as expected but doesn't follow best practices.
+// It'd be better to declare te 'i' variable with 'let',
+// this way the variable scope would be restricted to the for loop,
+// and use the loop to update an outer variable (count).
+// Finally, the console.log() should print the updated variable 'count'
+
 
 // Exercise 7: Default Parameters
 function divide(a, b = 1) {
