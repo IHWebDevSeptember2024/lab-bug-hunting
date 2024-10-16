@@ -10,14 +10,18 @@ const person = {
     name: 'John',
     age: 30
 };
-console.log('The person is', person[name], 'and is', person[age], 'years old.');
+console.log('The person is', person['name'], 'and is', person['age'], 'years old.');
+// when using bracket notation to refference object properties, they have to be put in quotation marks, otherwise, javascript thinks they are undeclared variables.
 
 // Exercise 3: Functions
 function greet(name) {
-    return 'Hello, ' + name;
+    /*return*/ console.log ('Hello, ' + name); 
 }
 // The greeting should be displayed on console
-greet();
+greet('Èric');
+// The function returns the result of the expression but it won't print it anywhere (it can be stored in a variable or used in another expression).
+// To print it, the console.log() must be implemented.
+// I passed a string to the greet function as well because if no argument is passed in the function invocation, the value of 'name' is undefined.
 
 // Exercise 4: Arrow Functions
 const multiply = (a, b) => {
