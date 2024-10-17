@@ -100,6 +100,14 @@ const arr2 = [4, 5, 6];
 const combinedArr = /* [...arr1, arr2]; */ [...arr1, ...arr2]; // The second array has to use the spread operator as well
 console.log(combinedArr); // Should print [1, 2, 3, 4, 5, 6]
 
+// Exercise 11: ???
+
+// The exercise should be declared
+
+// Exercise 12: ???¿¿¿
+
+// The commit was never pushed... 🥲
+
 // Exercise 13: Classes
 class Animal {
     constructor(name) {
@@ -116,17 +124,22 @@ const animal = new Animal('Dog');
 // Exercise 14: Error Handling
 function parseJSON(jsonString) {
     try {
-        return JSON.parse(jsonStr);
+        return JSON.parse(/* jsonStr */ jsonString); // The argument here should be the parameter of the general function (it's written incorrectly)
     } catch (error) {
         console.error('Invalid JSON', error);
     }
 }
-parseJSON('{"name": "Bob"}');
+/* parseJSON('{"name": "Bob"}'); */
 
+const parsedString = parseJSON('{"name": "Bob"}');
+console.log(parsedString);
+
+// Also, a console.log would be useful here to know the return value of the expression.
+// Best practices would be to store it in a variable and print that variable in the console
 
 // Exercise 15: Conditional Statements
 const age = 18;
-if (age > 18) {
+if (age /* > */>= 18) { // Regarding to european law the operator here should be >=
     console.log('Adult');
 } else {
     console.log('Minor');
