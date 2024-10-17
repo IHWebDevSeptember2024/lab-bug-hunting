@@ -55,7 +55,7 @@ function counter() {
     }
     console.log(i); // Should print 5
     */
-   
+
     let count = 0;
     for (let i = 0; i < 5; i++) {
         count++;
@@ -64,7 +64,7 @@ function counter() {
 }
 counter();
 
-// The code works as expected but doesn't follow best practices.
+// The code works as expected due to the scope of var i but doesn't follow best practices.
 // It'd be better to declare te 'i' variable with 'let',
 // this way the variable scope would be restricted to the for loop,
 // and use the loop to update an outer variable (count).
@@ -75,8 +75,9 @@ counter();
 function divide(a, b = 1) {
     return a / b;
 }
-const divisionResult = division(4);
+const divisionResult = /* division(4); */ divide(4) // the name of the function is incorrect
 console.log('Division result:', divisionResult);
+// Also, the name could be refactored to be more accurate and descriptive of the function's purpose: divideBy1()
 
 // Exercise 8: Template Literals
 const user = {
