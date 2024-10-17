@@ -110,7 +110,8 @@ class Animal {
     }
 }
 const animal = new Animal('Dog');
-Animal.speak(); // Should print 'Dog makes a noise.'
+/* Animal.speak(); */ animal.speak(); // Should print 'Dog makes a noise.'
+// The instance is not correctly refferenced. Animal is the class while "animal" is the instance with the speak() method.
 
 // Exercise 14: Error Handling
 function parseJSON(jsonString) {
