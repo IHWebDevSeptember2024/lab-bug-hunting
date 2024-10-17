@@ -84,7 +84,9 @@ const user = {
     firstName: 'Alice',
     lastName: 'Smith'
 };
-console.log('User: ${user.firstName} ${user.lastName}');
+/* console.log('User: ${user.firstName} ${user.lastName}'); */
+console.log(`User: ${user.firstName} ${user.lastName}`);
+// To use template literals, backticks are required. Quotation marks don't work here.
 
 // Exercise 9: Array Methods
 const fruits = ['apple', 'banana', 'orange'];
