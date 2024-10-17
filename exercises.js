@@ -90,8 +90,9 @@ console.log(`User: ${user.firstName} ${user.lastName}`);
 
 // Exercise 9: Array Methods
 const fruits = ['apple', 'banana', 'orange'];
-const upperFruits = fruits.map(fruit => fruit.toUppercase());
+const upperFruits = fruits.map(fruit =>/* fruit.toUppercase() */fruit.toUpperCase()); 
 console.log(upperFruits);
+// The Method is written wrong. "c" in toUppercase should be capital (toUpperCase)
 
 // Exercise 10: Spread Operator
 const arr1 = [1, 2, 3];
