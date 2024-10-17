@@ -97,7 +97,7 @@ console.log(upperFruits);
 // Exercise 10: Spread Operator
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
-const combinedArr = [...arr1, arr2];
+const combinedArr = /* [...arr1, arr2]; */ [...arr1, ...arr2]; // The second array has to use the spread operator as well
 console.log(combinedArr); // Should print [1, 2, 3, 4, 5, 6]
 
 // Exercise 13: Classes
